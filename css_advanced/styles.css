@@ -1,0 +1,13 @@
+nav {
+  border: 5px solid black;
+  display: flex;
+  flex-direction: row;
+  judtify-content: space-between;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  border: 5px solid red;
+}
