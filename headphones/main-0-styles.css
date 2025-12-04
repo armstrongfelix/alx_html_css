@@ -149,92 +149,58 @@ section button {
   width: 65%;
 }
 
-p {
-  font-family: SourceSansPro-regular;
+#section2 {
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin: 10% 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#s1p1 {
+  width: 60vw;
+}
+#div2 {
+  width: 85vw;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
+div figure {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#section3 {
+  background-image: url("./images/headphones_hero_2.jpg");
+  padding-top: 120px;
+}
+
+#section3 > p {
+  margin-top: 50px;
+}
+
+section article {
+  padding: 80px;
+
+  width: 85vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 45px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
 /* Extra small devices */
 @media (max-width: 575px) {
-  section article {
-    grid-template-columns: 1fr;
-  }
-
-  #div2 {
-    grid-template-columns: 1fr;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 18vh;
-  }
-  header div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 35vw;
-  }
-  header nav {
-    display: flex;
-    flex-direction: column;
-  }
-
-  footer section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-  }
-  footer nav {
-    display: flex;
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 575px) {
-  section article {
-    grid-template-columns: 1fr;
-  }
-
-  #div2 {
-    grid-template-columns: 1fr;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 18vh;
-  }
-  header div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 35vw;
-  }
-  header nav {
-    display: flex;
-    flex-direction: column;
-  }
-
-  footer section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-  }
-  footer nav {
-    display: flex;
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 480px) {
   section article {
     grid-template-columns: 1fr;
   }
@@ -328,4 +294,96 @@ p {
   #menu {
     display: none;
   }
+}
+
+article div {
+  width: 200px;
+  height: 190px;
+  /* border: solid green; */
+  background-image: url(./images/pentagone.png);
+  background-size: contain;
+  background-position: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div > h2 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+form {
+  padding-top: 120px;
+  width: 60wv;
+  color: black;
+  text-align: left;
+  background-color: white;
+}
+
+form input {
+  width: 100%;
+  border: none;
+}
+form textarea {
+  border: none;
+  width: 100%;
+}
+form hr {
+  padding: 0.2px;
+  color: solid #6c6767;
+}
+
+form button {
+  background-color: #ff6565;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 25px;
+  margin: 0 auto 0;
+  color: white;
+  font-weight: bold;
+}
+
+footer {
+  width: 100vw;
+  height: 25vh;
+  background-color: #071629;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0px 30px 15px;
+  margin-top: 80px;
+}
+
+footer section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer section nav {
+  display: flex;
+  gap: 15px;
+}
+
+footer div {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  color: #071629;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  font-size: small;
+  font-weight: lighter;
+  color: #979797;
+}
+p {
+  font-family: "SourceSansPro-regular";
 }
