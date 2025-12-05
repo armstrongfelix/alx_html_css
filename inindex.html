@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      /* Hide the checkbox */
+      #menu-toggle {
+        display: none;
+      }
+
+      /* The hamburger icon */
+      .menu-btn {
+        font-size: 30px;
+        cursor: pointer;
+        padding: 10px;
+        display: inline-block;
+        color: black;
+      }
+
+      /* Navigation menu */
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        /* background: #444; */
+        padding: 10px;
+        display: none; /* hidden by default */
+      }
+
+      nav a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding: 8px 0;
+      }
+
+      /* When checkbox is checked → show nav */
+      #menu-toggle:checked ~ nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hidden checkbox -->
+    <input type="checkbox" id="menu-toggle" />
+
+    <!-- Label acts like a button -->
+    <label for="menu-toggle" class="menu-btn">☰</label>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </body>
+</html>
